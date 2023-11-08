@@ -1,5 +1,15 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
 @font-face {
-  font-display: swap; 
+  font-display: swap;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 300;
@@ -7,7 +17,7 @@
 }
 
 @font-face {
-  font-display: swap; 
+  font-display: swap;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
@@ -15,19 +25,19 @@
 }
 
 @font-face {
-  font-display: swap; 
+  font-display: swap;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
-  src: url('../fonts/poppins-v20-latin-600.woff2') format('woff2'); 
-} 
+  src: url('../fonts/poppins-v20-latin-600.woff2') format('woff2');
+}
 
 @font-face {
-  font-display: swap; 
+  font-display: swap;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 900;
-  src: url('../fonts/poppins-v20-latin-900.woff2') format('woff2'); 
+  src: url('../fonts/poppins-v20-latin-900.woff2') format('woff2');
 }
 
 :root {
@@ -43,6 +53,17 @@ body {
   font-size: 18px;
   font-weight: 400;
   line-height: 1.5;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
 }
 
 ul {
@@ -53,7 +74,7 @@ a {
   text-decoration: none;
 }
 
-address{
+address {
   font-style: normal;
 }
 
@@ -71,6 +92,19 @@ address{
   color: var(--color-brand-dark);
 }
 
+.container {
+  width: 100%;
+  max-width: 1288px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section {
+  padding: 48px 0;
+}
+
+/* Header */
+
 .nav-link {
   color: #faf4ea;
 }
@@ -80,15 +114,37 @@ address{
   font-weight: 600;
 }
 
+/* Hero section */
+
+.hero-section {
+  padding: 272px 0;
+}
+
 .hero-title {
   color: var(--color-primary-light);
   text-align: center;
   font-size: 128px;
   font-weight: 900;
+  margin-bottom: 0;
 }
 
 .hero-title .accent {
   color: var(--color-brand-light);
+}
+
+/* Advantages section */
+
+.hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.traditions-section {
+  padding-top: 96px;
 }
 
 .advantages-item {
@@ -99,6 +155,12 @@ address{
 .advantages-list {
   color: var(--color-primary-light);
   background-color: var(--color-brand-light);
+}
+
+/* Traditions section */
+
+.traditions-title {
+  margin-bottom: 42px;
 }
 
 .section-title {
@@ -123,9 +185,22 @@ address{
   text-transform: uppercase;
 }
 
+/* Chefs section */
+
+.chefs-title {
+  margin-bottom: 80px;
+}
+
 .chef-title {
+  margin-bottom: 16px;
   font-size: 40px;
   font-weight: 600;
+}
+
+/* Formats section */
+
+.formats-title {
+  margin-bottom: 80px;
 }
 
 .format-title {
@@ -138,6 +213,14 @@ address{
   font-weight: 300;
 }
 
+/* Contacts form section */
+
+.contacts-title {
+  margin-bottom: 16px;
+}
+
+/* Footer */
+
 .address-link {
   color: var(--color-primary-light);
   font-size: 16px;
@@ -148,6 +231,6 @@ address{
   color: var(--color-brand-light);
 }
 
-.address-copy{
+.address-copy {
   font-size: 14px;
 }
